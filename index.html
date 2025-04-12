@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chronology of Islamic Civilization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .timeline {
+      display: flex;
+      overflow-x: auto;
+      padding: 20px;
+      gap: 30px;
+    }
+    .event {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-width: 250px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .event:hover {
+      transform: scale(1.05);
+      background-color: #e1f5fe;
+    }
+    .date {
+      font-weight: bold;
+      color: #4a90e2;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .description {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .event img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    button {
+      font-size: 24px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button.prev, button.next {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 50%;
+    }
+    button.prev {
+      left: 20px;
+    }
+    button.next {
+      right: 20px;
+    }
+    @media (max-width: 768px) {
+      .timeline {
+        flex-direction: column;
+        align-items: center;
+      }
+      .event {
+        min-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Chronology of Islamic Civilization</h1>
+  <div class="timeline">
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Green_Dome_Al-Masjid_an-Nabawi.JPG/800px-Green_Dome_Al-Masjid_an-Nabawi.JPG" alt="Death of Prophet Muhammad">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 632 CE</div>
+      <div class="title">Death of Prophet Muhammad ﷺ</div>
+      <div class="description">Start of Rashidun Caliphate and rapid Islamic expansion under Abu Bakr, Umar, Uthman, and Ali.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Umayyad_Mosque_Courtyard.jpg/800px-Umayyad_Mosque_Courtyard.jpg" alt="Umayyad Caliphate">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 661–750</div>
+      <div class="title">Umayyad Caliphate</div>
+      <div class="description">Capital in Damascus. Expansion into North Africa, Spain, and Central Asia.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Baghdad_from_Space.jpg/800px-Baghdad_from_Space.jpg" alt="Abbasid Caliphate">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 750–1258</div>
+      <div class="title">Abbasid Caliphate</div>
+      <div class="description">Golden Age centered in Baghdad. Flourishing of science, medicine, philosophy, and culture.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Hulagu_Khan.jpg/800px-Hulagu_Khan.jpg" alt="Mongol Sack of Baghdad">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 1258</div>
+      <div class="title">Mongol Sack of Baghdad</div>
+      <div class="description">End of centralized Abbasid rule. Fragmentation of Islamic authority.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/OttomanEmpireIn1683.png/800px-OttomanEmpireIn1683.png" alt="Gunpowder Empires">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 1300s–1600s</div>
+      <div class="title">Gunpowder Empires</div>
+      <div class="description">Rise of the Ottoman, Safavid, and Mughal empires with military and cultural dominance.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Napoleon_in_Egypt.jpg/800px-Napoleon_in_Egypt.jpg" alt="Decline of Empires">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 1700s–1800s</div>
+      <div class="title">Decline of Empires</div>
+      <div class="description">Weakening of Islamic empires due to internal issues and European colonialism.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Gamal_Abdel_Nasser_1958.jpg/800px-Gamal_Abdel_Nasser_1958.jpg" alt="Colonialism & Nationalism">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 19th–20th Century</div>
+      <div class="title">Colonialism & Nationalism</div>
+      <div class="description">Rise of nationalist movements, decline of colonial power, push for independence in Muslim lands.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Mustafa_Kemal_Atat%C3%BCrk_portrait.jpg/800px-Mustafa_Kemal_Atat%C3%BCrk_portrait.jpg" alt="Abolition of the Caliphate">
+      <div class="date"><i class="fas fa-calendar-alt"></i> 1924</div>
+      <div class="title">Abolition of the Caliphate</div>
+      <div class="description">Ottoman Caliphate formally ended by Mustafa Kemal Atatürk. Transition to modern nation-states.</div>
+    </div>
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Modern_Islamic_Architecture_in_Kuala_Lumpur.jpg/800px-Modern_Islamic_Architecture_in_Kuala_Lumpur.jpg" alt="Modern Islam">
+      <div class="date"><i class="fas fa-calendar-alt"></i> Modern Era</div>
+      <div class="title">Nation States & Global Islam</div>
+      <div class="description">Emergence of modern Muslim-majority countries and ongoing global Islamic contributions.</div>
+    </div>
+  </div>
+
+  <button class="prev" onclick="scrollTimeline(-1)">❮</button>
+  <button class="next" onclick="scrollTimeline(1)">❯</button>
+
+  <script>
+    function scrollTimeline(direction) {
+      const timeline = document.querySelector('.timeline');
+      const scrollAmount = 300;
+      timeline.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  </script>
+</body>
+</html>
